@@ -1,23 +1,16 @@
 export const educationData = [
     {
         id: 1,
-        institution: 'Marble Hills Middle School',
-        course: 'Higher Secondary Education',
-        startYear: '2007',
-        endYear: '2015'
+        institution: 'Shri Ramdeobaba College of Engineering and Management, Nagpur',
+        course: 'Masters in Computer Applications',
+        startYear: '2018',
+        endYear: '2020'
     },
     {
         id: 2,
-        institution: 'Somerset School of Science',
-        course: 'Bachelor of Technology',
+        institution: 'D. B. Science College, Gondia',
+        course: "Bachelors's in Computer Application",
         startYear: '2015',
-        endYear: '2019'
-    },
-    {
-        id: 3,
-        institution: 'Hawking University, Cambridge',
-        course: 'Master of Technology',
-        startYear: '2019',
-        endYear: 'Present'
+        endYear: '2018'
     },
 ]

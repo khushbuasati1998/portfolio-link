@@ -9,12 +9,10 @@ import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
 
 import {
-    FaTwitter,
     FaLinkedin,
     FaGithub,
-    FaYoutube,
-    FaBlogger,
 } from 'react-icons/fa';
+import {IoMdMail} from 'react-icons/io';
 
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
@@ -101,42 +99,16 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.twitter && (
+                        {socialsData.gmail && (
                             <a
-                                href={socialsData.twitter}
+                                href={socialsData.gmail}
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaTwitter
+                                <IoMdMail
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
-                                    aria-label='Twitter'
-                                />
-                            </a>
-                        )}
-                        {socialsData.youtube && (
-                            <a
-                                href={socialsData.youtube}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaYoutube
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='YouTube'
-                                />
-                            </a>
-                        )}
-                        {socialsData.blogger && (
-                            <a
-                                href={socialsData.blogger}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaBlogger
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='Blogger'
+                                    aria-label='Gmail'
                                 />
                             </a>
                         )}
@@ -162,7 +134,7 @@ function Landing() {
                         <h6>{headerData.title}</h6>
                         <h1>{headerData.name}</h1>
                         <p>{headerData.desciption}</p>
-
+                        <p>{headerData.desciption2}</p>
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
                                 <a
