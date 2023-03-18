@@ -7,12 +7,14 @@ import './Landing.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
+import { contactsData } from '../../data/contactsData';
 
 import {
     FaLinkedin,
     FaGithub,
 } from 'react-icons/fa';
 import {IoMdMail} from 'react-icons/io';
+import { FiPhone } from 'react-icons/fi';
 
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
@@ -99,13 +101,26 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.gmail && (
+                        {contactsData.email && (
                             <a
-                                href={socialsData.gmail}
+                                href={`mailto:${contactsData.email}`}
                                 target='_blank'
                                 rel='noreferrer'
                             >
                                 <IoMdMail
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='Gmail'
+                                />
+                            </a>
+                        )}
+                        {contactsData.phone && (
+                            <a
+                                href={`tel:${contactsData.phone}`}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FiPhone
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='Gmail'

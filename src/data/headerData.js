@@ -4,7 +4,7 @@ import profilePic from '../assets/images/profilePic.jpeg';
 export const headerData = {
     name: 'Khushbu Asati',
     title: "Software Engineer",
-    desciption:`I'm a Software Engineer with 2+ years of
+    desciption:`I'm a Software Engineer with 2.8 years of
     experience of building and maintaining
     responsive websites in the recruiting
     industry.`,
