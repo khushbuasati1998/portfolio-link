@@ -122,7 +122,7 @@ function Landing() {
                             >
                                 <FiPhone
                                     className='landing--social'
-                                    style={{ color: theme.secondary }}
+                                    style={{ color: theme.secondary, fontSize: '24px' }}
                                     aria-label='Gmail'
                                 />
                             </a>
