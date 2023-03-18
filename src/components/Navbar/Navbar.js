@@ -9,6 +9,7 @@ import { FaUser, FaFolderOpen } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
+import {GiSkills} from 'react-icons/gi';
 
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
@@ -219,7 +220,7 @@ function Navbar() {
                                 duration={2000}
                             >
                                 <div className={classes.drawerItem}>
-                                    <FaFolderOpen
+                                    <GiSkills
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
@@ -241,7 +242,7 @@ function Navbar() {
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                    Experi...
+                                        Experi...
                                     </span>
                                 </div>
                             </NavLink>
@@ -255,11 +256,11 @@ function Navbar() {
                                 duration={2000}
                             >
                                 <div className={classes.drawerItem}>
-                                    <BsFillGearFill
+                                    <FaFolderOpen
                                         className={classes.drawerIcon}
                                     />
                                     <span className={classes.drawerLinks}>
-                                    Projects
+                                        Projects
                                     </span>
                                 </div>
                             </NavLink>
